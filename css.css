@@ -7,10 +7,22 @@
 .form{
     height: 100vh;
     width: 100vw;
-    text-align: center;
+    text-align: left;
     font-size: 25px;
+    max-width: 60%;
+    display: grid;
+    position: relative;
+    left: 20%;
 }
 .welcome{
     position: relative;
     top: 40%;
+}
+.submit{
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+}
+label{
+    margin-top: 40px;
 }
