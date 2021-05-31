@@ -5,24 +5,27 @@
 var products = [
 	{
 		name: "brocoli",
-		vegetarian: true,
-		glutenFree: true,
+		nutAllergic: true,
+		lactoseIntolerant: true,
 		price: 1.99
 	},
 	{
 		name: "bread",
-		vegetarian: true,
-		glutenFree: false,
+		nutAllergic: true,
+		lactoseIntolerant: false,
 		price: 2.35
 	},
 	{
 		name: "salmon",
-		vegetarian: false,
-		glutenFree: true,
+		nutAllergic: false,
+		lactoseIntolerant: true,
 		price: 10.00
 	}
 ];
 	
+products.sort((a, b) => {
+    return a.price - b.price;
+});
 
 
 // given restrictions provided, make a reduced list of products
@@ -31,14 +34,14 @@ var products = [
 function restrictListProducts(prods, restriction) {
 	let product_names = [];
 	for (let i=0; i<prods.length; i+=1) {
-		if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
-			product_names.push(prods[i].name);
+		if ((restriction == "Nut Allergic") && (prods[i].nutAllergic == true)){
+			product_names.push(prods[i].name + " - " + prods[i].price);
 		}
-		else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
-			product_names.push(prods[i].name);
+		else if ((restriction == "Lactose Intolerant") && (prods[i].lactoseIntolerant == true)){
+			product_names.push(prods[i].name + " - " + prods[i].price);
 		}
 		else if (restriction == "None"){
-			product_names.push(prods[i].name);
+			product_names.push(prods[i].name + " - " + prods[i].price);
 		}
 	}
 	return product_names;
