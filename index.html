@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Grocery Store</title>
+  <title>EasyMart</title>
 	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
   <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
@@ -10,8 +10,8 @@ integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG
 </head>
 
 <body>
-
-  <h1>Online Grocery Store</h1>
+<div class="main">
+  <h1 style="text-align: center;">EasyMart Grocery Store</h1>
 
 <!-- Tab links, each one with an onclick event associated with it -->
 <div class="tab">
@@ -32,7 +32,7 @@ integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG
     <option value="None">None</option>
 	</select>
   <br>
-  <input type="checkbox" name="Organic" id="Organic">
+  <input type="checkbox" name="Organic" id="Organic" onchange="populateListProductChoices('dietSelect', 'displayProduct')">
   <label for="Organic">Organic</label>
 </div>
 
@@ -54,6 +54,8 @@ integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG
 
 <script src="scripts/groceries.js"></script>
 <script src="scripts/main.js"></script>
+</div>
+<footer>Designed by Sunny Productions</footer>
 
 </body>
 </html>
