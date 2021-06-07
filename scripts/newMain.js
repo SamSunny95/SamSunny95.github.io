@@ -65,8 +65,8 @@ function populateListProductChoices(slct1, slct2) {
         var box = document.createElement('div');
         var img = document.createElement('img');
         img.src = "styles/"+productName + ".JPG";
-        img.style.maxWidth = "100px";
-        img.style.maxHeight="100px";
+        img.style.maxWidth = "200px";
+        img.style.maxHeight="200px";
         box.className = "box";
 		label.htmlFor = productName;
         label.appendChild(checkbox)
