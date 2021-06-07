@@ -50,7 +50,8 @@ function populateListProductChoices(slct1, slct2) {
 		checkbox.type = "checkbox";
 		checkbox.name = "product";
 		checkbox.value = productName;
-		s2.appendChild(checkbox);
+        checkbox.className="checkbox";
+		//s2.appendChild(checkbox);
 
 		var index;
 		for(let k=0;k<products.length;k++){
@@ -60,13 +61,22 @@ function populateListProductChoices(slct1, slct2) {
 		}
 		
 		// create a label for the checkbox, and also add in HTML DOM
-		var label = document.createElement('label')
+		var label = document.createElement('label');
+        var box = document.createElement('div');
+        var img = document.createElement('img');
+        img.src = "styles/"+productName + ".JPG";
+        img.style.maxWidth = "100px";
+        img.style.maxHeight="100px";
+        box.className = "box";
 		label.htmlFor = productName;
-		label.appendChild(document.createTextNode(productName +" - "+ products[index].price));
-		s2.appendChild(label);
+        label.appendChild(checkbox)
+		label.appendChild(document.createTextNode(" "+productName +" - "+ products[index].price));
+        box.appendChild(label);
+        box.appendChild(img);
+		s2.appendChild(box);
 		
 		// create a breakline node and add in HTML DOM
-		s2.appendChild(document.createElement("br"));    
+		//s2.appendChild(document.createElement("br"));    
 	}
 }
 	

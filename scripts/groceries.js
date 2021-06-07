@@ -8,70 +8,80 @@ var products = [
 		nutAllergic: false,
 		lactoseIntolerant: false,
 		organic: true,
-		price: 1.99
+		price: 1.99,
+		img: "Broccoli.JPG"
 	},
 	{
 		name: "bread",
 		nutAllergic: false,
 		lactoseIntolerant: false,
 		organic:false,
-		price: 2.35
+		price: 2.35,
+		img:"bread.JPG"
 	},
 	{
 		name: "salmon",
 		nutAllergic: false,
 		lactoseIntolerant: false,
 		organic:false,
-		price: 10.00
+		price: 9.99,
+		img:"salmon.JPG"
 	},
 	{
 		name: "Granola Bars",
 		nutAllergic: true,
 		lactoseIntolerant: false,
 		organic:false,
-		price: 2.99
+		price: 2.99,
+		img:"granola.JPG"
 	},
 	{
 		name: "Milk",
 		nutAllergic: false,
 		lactoseIntolerant: true,
 		organic:true,
-		price: 3.49
+		price: 3.49,
+		img:"milk.JPG"
 	},
 	{
 		name: "Cheese",
 		nutAllergic: false,
 		lactoseIntolerant: true,
 		organic:false,
-		price: 5.99
+		price: 5.99,
+		img:"cheese.JPG"
 	},
 	{
 		name: "Candy Bar",
 		nutAllergic: true,
 		lactoseIntolerant: false,
 		organic:false,
-		price: 1.99
+		price: 1.99,
+		img:"candy.JPG"
 	},
 	{
 		name: "Apple",
 		nutAllergic: false,
 		lactoseIntolerant: false,
 		organic:true,
-		price: 0.99
+		price: 0.99,
+		img:"apple.JPG"
 	},
 	{
 		name: "Banana",
 		nutAllergic: false,
 		lactoseIntolerant: false,
 		organic:true,
-		price: 0.79
+		price: 0.79,
+		img:"banana.JPG"
 	},
 	{
 		name: "Pie",
 		nutAllergic: true,
 		lactoseIntolerant: true,
 		organic:false,
-		price: 4.99
+		price: 4.99,
+		img:"pie.JPG"
 	}
 ];
 	
