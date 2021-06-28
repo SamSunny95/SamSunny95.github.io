@@ -172,6 +172,19 @@
           <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important."
             required></textarea>
         </div>
+        <div class="elem-group">
+          <label for="message">Credit Card Number</label>
+          <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+        </div>
+        <div class="elem-group inlined">
+          <label for="message">Expiry</label>
+          <input type="text"placeholder="MM/YYYY">
+        </div>
+        <div class="elem-group inlined">
+          <label for="message">CVV</label>
+          <input type="text"placeholder="###">
+        </div>
+
         <button type="submit">Book The Appointment</button>
       </form>
     </div>
