@@ -59,3 +59,17 @@ body {
   button:hover {
     border: 2px solid black;
   }
+  .wrapper {
+    background-color: #bada55;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  input {
+    border-color: #333;
+  }
+  .ui-datepicker {
+      width: auto;
+  }
