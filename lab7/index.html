@@ -35,9 +35,10 @@
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+    <a href="#services">Services</a>
+    <a href="#Experts">Experts</a>
+    <a href="#appointments">Appointments</a>
+    <a href="#Contact">Contact</a>
   </div>
   
   <!-- Use any element to open the sidenav -->
@@ -57,7 +58,7 @@
         our customers</p>
     </div>
 
-    <table class="table table-info table-hover">
+    <table class="table table-info table-hover" id="services">
       <thead>
         <tr>
           <th scope="col" style="width: 25%;">
@@ -96,7 +97,7 @@
       </tbody>
     </table>
 
-    <h1>Meet the Physicians!</h1>
+    <h1 id=Experts>Meet the Physicians!</h1>
     <div class="row justify-content-around">
       <div class="card" style="width: 18rem;">
         <img src="styles/d1.jpg" class="card-img-top" alt="...">
@@ -121,7 +122,7 @@
       </div>
     </div>
     <br>
-    <div class="container">
+    <div class="container" id="appointments">
       <h1>Book an Appointment <img src="https://img.icons8.com/ios/50/000000/pay-date.png" /></h1>
       <form action="javascript:void(0);" method="post">
         <div class="elem-group">
@@ -148,9 +149,20 @@
           <label for="room-selection">Select Practitioner</label>
           <select id="room-selection" name="room_preference" required>
             <option value="">Choose a Practitioner from the List</option>
-            <option value="connecting">Drake Ramoray</option>
-            <option value="adjoining">Grace Annet</option>
-            <option value="adjacent">Jean Phillippe</option>
+            <option value="Drake">Drake Ramoray</option>
+            <option value="Grace">Grace Annet</option>
+            <option value="Jean">Jean Phillippe</option>
+          </select>
+        </div>
+        <div class="elem-group">
+          <label for="service-selection">Select Service</label>
+          <select id="service-selection" name="room_preference" required>
+            <option value="">Choose a Service from the List</option>
+            <option value="General Dentistry">General Dentistry</option>
+            <option value="Periodontics">Periodontics</option>
+            <option value="Orthodontics">Orthodontics</option>
+            <option value="Dentures">Dentures</option>
+            <option value="Dental Implants">Dental Implants</option>
           </select>
         </div>
         <hr>
@@ -165,7 +177,7 @@
 
 
     <br>
-    <div class="container">
+    <div class="container" id="Contact">
       <h1 class=""> Contact us</h1>
       <div style="display: flex;">
         <div style="width: 50%;">
