@@ -12,6 +12,7 @@
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link href="styles/newStyle.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="styles/contact.css" type="text/css">
+  <link rel="stylesheet" href="styles/booking.css" type="text/css">
 </head>
 
 <body style="background-image: url(styles/bg.jpg);">
@@ -41,50 +42,155 @@
       </thead>
       <tbody>
         <tr>
-          <td><img src="https://img.icons8.com/office/40/000000/dental-filling.png"/> General Dentistry</td>
-          <td>Regular checkups will help you maintain excellent oral health. We offer you and your family general dentistry services.</td>
+          <td><img src="https://img.icons8.com/office/40/000000/dental-filling.png" /> General Dentistry</td>
+          <td>Regular checkups will help you maintain excellent oral health. We offer you and your family general
+            dentistry services.</td>
         </tr>
         <tr>
-          <td><img src="https://img.icons8.com/office/40/000000/tooth-cracked.png"/> Periodontics</td>
+          <td><img src="https://img.icons8.com/office/40/000000/tooth-cracked.png" /> Periodontics</td>
           <td>Periodontal disease is serious. It is the leading cause of tooth loss in adults. New research is exploring
             possible links between gum disease and diabetes, cardiovascular disease, and other serious ailments.</td>
         </tr>
         <tr>
-          <td><img src="https://img.icons8.com/office/40/000000/dental-braces.png"/> Orthodontics</td>
+          <td><img src="https://img.icons8.com/office/40/000000/dental-braces.png" /> Orthodontics</td>
           <td>Straighten your teeth at any age with Invisalign or traditional braces.</td>
         </tr>
         <tr>
-          <td><img src="https://img.icons8.com/office/40/000000/false-teeth.png"/> Dentures</td>
-          <td>We offer partial and complete dentures. If you have lost all or a portion of your teeth, dentures can help boost your confidence in eating and talking. </td>
+          <td><img src="https://img.icons8.com/office/40/000000/false-teeth.png" /> Dentures</td>
+          <td>We offer partial and complete dentures. If you have lost all or a portion of your teeth, dentures can help
+            boost your confidence in eating and talking. </td>
         </tr>
         <tr>
-          <td><img src="https://img.icons8.com/office/40/000000/dental-implant.png"/> Dental Implants</td>
-          <td>A Dental Implant is made from titanium. It bonds to the jaw, much like the root of a natural tooth, and permanently replaces a lost tooth. Dental implants are suitable to anyone in good general health.</td>
+          <td><img src="https://img.icons8.com/office/40/000000/dental-implant.png" /> Dental Implants</td>
+          <td>A Dental Implant is made from titanium. It bonds to the jaw, much like the root of a natural tooth, and
+            permanently replaces a lost tooth. Dental implants are suitable to anyone in good general health.</td>
         </tr>
       </tbody>
     </table>
 
+    <h1>Meet the Physicians!</h1>
+    <div class="row justify-content-around">
+      <div class="card" style="width: 18rem;">
+        <img src="styles/d1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Drake Ramoray</p>
+          <p>General practitioner </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="styles/d2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Grace Annet</p>
+          <p>Dental Surgeon</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="styles/d3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Jean Phillippe</p>
+          <p>General Practiioner</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <h1>Book an Appointment</h1>
+      <form action="javascript:void(0);" method="post">
+        <div class="elem-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
+        <div class="elem-group">
+          <label for="email">Your E-mail</label>
+          <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+        </div>
+        <div class="elem-group">
+          <label for="phone">Your Phone</label>
+          <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872"
+            pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+        </div>
+        <hr>
+
+        <div class="elem-group inlined">
+          <label for="checkin-date">Check-in Date</label>
+          <input type="date" id="checkin-date" name="checkin" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="checkout-date">Check-out Date</label>
+          <input type="date" id="checkout-date" name="checkout" required>
+        </div>
+        <div class="elem-group">
+          <label for="room-selection">Select Practitioner</label>
+          <select id="room-selection" name="room_preference" required>
+            <option value="">Choose a Practitioner from the List</option>
+            <option value="connecting">Drake Ramoray</option>
+            <option value="adjoining">Grace Annet</option>
+            <option value="adjacent">Jean Phillippe</option>
+          </select>
+        </div>
+        <hr>
+        <div class="elem-group">
+          <label for="message">Comments</label>
+          <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important."
+            required></textarea>
+        </div>
+        <button type="submit">Book The Appointment</button>
+      </form>
+    </div>
 
 
+    <br>
     <div class="container">
       <h1 class=""> Contact us</h1>
-      <form action="javascript:void(0);">
-    
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-    
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-    
-        <label for="email">Last Name</label>
-        <input type="text" id="email" name="email" placeholder="Your email address..">
+    <div style="display: flex;">
+      <div style="width: 50%;">
+        <form action="javascript:void(0);" style="font-size: medium;">
+
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="email">Last Name</label>
+          <input type="text" id="email" name="email" placeholder="Your email address..">
+
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+          <input type="submit" value="Submit">
+
+        </form>
+      </div>
+      
+      <div style="width: 50%; padding: 5%;">
+        <p>160 MacLaren St, Ottawa, ON K2P 0K9</p>
+        <div id="map" style="max-width: 100%; max-height: 50%;width: 500px; height: 400px;"></div>
+
+      <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly"
+        async></script>
+      <script>// Initialize and add the map
+        function initMap() {
+          // The location of Uluru, 
+          const uluru = { lat: 45.41760804736768, lng: -75.68990561218658 };
+          // The map, centered at Uluru
+          const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 12,
+            center: uluru,
+          });
+          // The marker, positioned at Uluru
+          const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+          });
+        }</script>
         
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-    
-        <input type="submit" value="Submit">
-    
-      </form>
+      </div>
+    </div>
+        
+
     </div>
 
   </div>
