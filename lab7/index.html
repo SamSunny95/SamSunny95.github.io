@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sunny Dental Clinic</title>
+  <title>Elgin Dental Clinic</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" rel="Stylesheet" type="text/css" />
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
@@ -25,7 +25,7 @@
       });
     });
   </script>
-  
+
 
 
 </head>
@@ -40,15 +40,16 @@
     <a href="#appointments">Appointments</a>
     <a href="#Contact">Contact</a>
   </div>
-  
+
   <!-- Use any element to open the sidenav -->
-  <img src="https://img.icons8.com/material-outlined/48/ffffff/menu--v1.png" id="menuimg" onclick="openNav()"/>
-  
+  <img src="https://img.icons8.com/material-outlined/48/ffffff/menu--v1.png" id="menuimg" onclick="openNav()" />
 
 
-  <div class="" id="main" style="background: rgba(255,255,255, 0.5); padding: 1%; padding-bottom: 35px; padding-top: 3%;">
+
+  <div class="" id="main"
+    style="background: rgba(255,255,255, 0.5); padding: 1%; padding-bottom: 35px; padding-top: 3%;">
     <nav class="navbar bg-dark text-white p-3 my-3 btn">
-      <h1><img src="styles/heart.png" width="130" height="130" /> Welcome to Sunny Dental Clinic</h1>
+      <h1><img src="styles/heart.png" width="130" height="130" /> Welcome to Elgin Dental Clinic</h1>
     </nav>
 
     <div class=" p-3 my-3 border bg-light">
@@ -202,28 +203,9 @@
 
         <div style="width: 50%; padding: 5%;">
           <p>160 MacLaren St, Ottawa, ON K2P 0K9</p>
-          <div id="map" style="max-width: 100%; max-height: 50%;width: 500px; height: 400px;"></div>
-
-          <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-          <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly"
-            async></script>
-          <script>// Initialize and add the map
-            function initMap() {
-              // The location of Uluru, 
-              const uluru = { lat: 45.41760804736768, lng: -75.68990561218658 };
-              // The map, centered at Uluru
-              const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 12,
-                center: uluru,
-              });
-              // The marker, positioned at Uluru
-              const marker = new google.maps.Marker({
-                position: uluru,
-                map: map,
-              });
-            }</script>
-
+          <iframe style="max-width: 100%; max-height: 50%;width: 500px; height: 400px;"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7062119518464!2d-75.6877565623559!3d45.416553839183685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x16a971a2f94c3a44!2sElgin%20Dental%20Centre!5e0!3m2!1sen!2sca!4v1624890298842!5m2!1sen!2sca"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>        
         </div>
       </div>
 
@@ -234,22 +216,22 @@
 
   <footer>Designed by Sunny Productions</footer>
   <script src="scripts/javascript.js" type="script/JavaScript"></script>
- 
 
-<script>
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.getElementById("menuimg").style.display = "none";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    document.getElementById("menuimg").style.display = "block"
-    document.body.style.backgroundColor = "white";
-  }
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.getElementById("menuimg").style.display = "none";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+      document.getElementById("menuimg").style.display = "block"
+      document.body.style.backgroundColor = "white";
+    }
   </script>
 
 </body>
